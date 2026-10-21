@@ -1,0 +1,72 @@
+.activities {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+  padding-bottom: 40px;
+  @include breakpoint(tablet) {
+    padding-bottom: 80px;
+  }
+  &_header {
+    background-image: $gradient_pink_orange;
+    padding: 25px 30px;
+    color: $white;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    @include breakpoint(tablet) {
+      margin-bottom: 0;
+    }
+  }
+  &_item {
+    padding: 1rem 2rem;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 56px 28px 32px;
+    position: relative;
+    @include breakpoint(tablet) {
+      margin-bottom: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_icon {
+      width: 56px;
+      height: 56px;
+      background: $gradient_pink_orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      position: absolute;
+      left: 20px;
+      top: -25px;
+    }
+
+    &_title {
+      font-size: 20px;
+      color: $black;
+      margin-bottom: 16px;
+    }
+    &_description {
+      color: #83869a;
+      text-align: justify;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .container {
+    @include breakpoint(tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 30px;
+    }
+    @include breakpoint(tablethorizontal) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 80px 30px;
+    }
+  }
+}

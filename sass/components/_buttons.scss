@@ -1,0 +1,15 @@
+.button {
+  @include button();
+}
+
+.button_pink_orange {
+  @include button_pink_orange();
+}
+
+.button_pink_blue {
+  @include button_pink_blue();
+}
+
+.button_link {
+  @include button_link();
+}

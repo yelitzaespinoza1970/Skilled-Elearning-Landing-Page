@@ -1,0 +1,68 @@
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin button($bg-color: $black, $color: white) {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 28px;
+  color: $white;
+  background: $black;
+  text-decoration: none;
+  &:hover {
+    background-color: #666ca3;
+  }
+}
+
+@mixin button_pink_orange() {
+  @include button();
+  background-image: $gradient_pink_orange;
+  &:hover {
+    background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+}
+
+@mixin button_pink_blue() {
+  @include button();
+  background-image: $gradient_pink_blue;
+  &:hover {
+    background:
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  }
+}
+
+@mixin button_link {
+  color: $pink;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}

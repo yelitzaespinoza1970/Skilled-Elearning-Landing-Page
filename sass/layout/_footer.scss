@@ -1,0 +1,17 @@
+footer.footer_principal {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: $black;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  ul {
+    @include reset-list;
+  }
+  .button {
+    @include button_pink_blue();
+  }
+}
