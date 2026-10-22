@@ -1,5 +1,6 @@
 # Skilled E-learning Landing Page
 
+![Skilled E-learning Landing Page](localhost_5173_%20%282%29.png)
 A responsive e-learning landing page developed as part of my Full Stack Development training.
 
 This project focuses on creating a modern, visually appealing, and responsive user interface using HTML5, Sass (SCSS), JavaScript, and Vite.
